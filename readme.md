@@ -2,9 +2,11 @@
 
 _By Alex Free_
 
-A completely automatic solution that tether downgrades to iOS 9.2.x, jailbreaks, and activates any iPhone 6S or iPhone 6S Plus (soon, SE support will be re-added). No blobs needed! Made possible by the work of many [others](#credits). iOS 9 WILL NEVER DIE. I had an iPhone 6S that I jailbroke with Pangu 9 on iOS 9.0.something back in the day, hence why I made this.
+A completely automatic solution that tether downgrades to iOS 9.2.x and up, jailbreaks, and activates any iPhone 6S, iPhone 6S Plus or iPhone SE. No blobs needed! Made possible by the work of many [others](#credits). iOS 9 WILL NEVER DIE. I had an iPhone 6S that I jailbroke with Pangu 9 on iOS 9.0.something back in the day, hence why I made this.
 
-Want this but for iOS 10.0 and up? Check out the sister project [Dusk Downgrade](https://github.com/alex-free/dusk-downgrade). Dusk Downgrade even works on iPhone 7 and iPhone 7 Plus.
+**WARNING: iServices (FaceTime, iMessage and others) don't work, due to the lack of a fix. That's why Alex Free removed SE support in 1.0.8.**
+
+Want this but for iOS 10.0 and up? Check out Alex's sister project [Dusk Downgrade](https://github.com/alex-free/dusk-downgrade). Dusk Downgrade even works on iPhone 7 and iPhone 7 Plus.
 
 ## Background Info
 
