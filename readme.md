@@ -1,6 +1,6 @@
-# A999 Activator: A9, iOS 9, 9 Years Later
+# Patched A999
 
-_By Alex Free_
+_By treebranch91_
 
 A completely automatic solution that tether downgrades to iOS 9.2.x and up, jailbreaks, and activates any iPhone 6S, iPhone 6S Plus or iPhone SE. No blobs needed! Made possible by the work of many [others](#credits). iOS 9 WILL NEVER DIE. I had an iPhone 6S that I jailbroke with Pangu 9 on iOS 9.0.something back in the day, hence why I made this.
 
@@ -34,9 +34,9 @@ For those unfamilar, A9 iOS 9 activation doesn't work normally anymore for many 
 
 A999 Activator is designed to work on Debian, Fedora, and Mac OS 10.12 or newer. x86_64 and ARM64 arches are supported. Other Linux distros are not yet supported.
 
-### Version 1.1.2 (7/8/2026)
+### Version 1.1.3 (7/9/2026)
 
-* [a999activator-v1.1.2.zip][(https://github.com/alex-free/a999activator/releases/download/v1.1.1/a999-activator-v1.1.1.zip)](https://github.com/treebranch91/a999activator-updates/releases/tag/Release) _For Mac OS and for Linux_
+* [patched-a999-activator-v1.1.3](https://github.com/treebranch91/patched-a999/releases/tag/v1.1.3) _For Mac OS and for Linux_
 
 Changes:
 
@@ -76,7 +76,7 @@ Note that on Linux you must run `a999` with root privilages, i.e. `sudo ./a999`.
 
 * YouTube in Safari works. The Safari browser in iOS 9 is so old that ads are broken and never show, but videos do play if you put the iPhone in a landscape orientation. It's pretty broken at this point in portarait mode, but landscape is good and search even works.
 
-* You can use iOS 9.2 and iOS 9.2.1 to send/recieve FaceTime calls and iMessages to your main iPhone. The iPhone SE "hacktivates", as in: sideloading and jailbreaking works (confirmed in July of 2025), but iServices don't. Still, support will be re-added.
+* You can use iOS 9.2 and iOS 9.2.1 to send/recieve FaceTime calls and iMessages to your main iPhone. The iPhone SE "hacktivates", as in: sideloading and jailbreaking works (confirmed as of July 9, 2026), but iServices don't. Still, support will be re-added.
 
 * You can use it as your main iPhone (I did for a few weeks). T-Mobile/Mint Mobile in the USA are confirmed working carriers.
 
@@ -152,19 +152,21 @@ Remember, this is all automatic (as possible)!
 
 4) Downgrades to iOS 10.2.1 to work around random rebooting to Recovery Mode and restore fails. This is the first step if activation files have already been backed up.
 
-5) Downgrades to target iOS 9.2.x.
+5) Downgrades to target iOS 9.x.x.
 
 6) Boots a custom ramdisk in Recovery mode that puts the activation tarball files, an activation script, and a launch daemon all on /. Jailbreaks the iPhone (needs a trigger to enable it but bootstrap is installed), disables Setup.app, and then reboots into Recovery Mode.
 
-7) Boots iOS 9.2.x.
+7) Boots iOS 9.x.x.
 
 8) User is prompted to sign in to Wi-Fi and then go to http://jbme.ddw.nu to enable the Jailbreak.
 
 9) Jailbreak triggers the previously in-active launch daemon. Launch daemon extracts all activation tarball files that were put on / into the proper /var places. After that it deletes itself and all other temp files. Setup.app is then re-enabled, and the iPhone is rebooted into Recovery mode.
 
-10) iPhone is booted into iOS 9.2.x. Activation status is checked and if successful a special boot script is created dynamically in the same directory as the a999 command which can be used to boot the device from Recovery Mode in the future.
+10) iPhone is booted into iOS 9.x.x. Activation status is checked and if successful a special boot script is created dynamically in the same directory as the a999 command which can be used to boot the device from Recovery Mode in the future.
 
 ## Credits
+
+* [Alex Free](https://github.com/alex-free) for [the A999 Activator](https://github.com/alex-free/a999activator)
 
 * [u/iPh0ne4s](https://www.reddit.com/user/iPh0ne4s/) and [u/_alecbaldwin](https://www.reddit.com/user/_alecbaldwin/) for the activation method posted by [u/roolw](https://www.reddit.com/user/roolw/): [How to fully activate iOS 9.2-9.3.5](https://www.reddit.com/r/setupapp/comments/1jwmv8s/how_to_fully_activate_ios_92_935/).
 
@@ -172,7 +174,10 @@ Remember, this is all automatic (as possible)!
 
 * [LukeZGD](https://github.com/LukeZGD) for [Legacy-iOS-Kit](https://github.com/LukeZGD/Legacy-iOS-Kit).
 
+
 ## License
+
+This fork is open-source and is free to use.
 
 A999activator itself is released under the 3-BSD license, see [license.md](license.md). A999Activator uses many other dependency programs which are not under that license, such as:
 
